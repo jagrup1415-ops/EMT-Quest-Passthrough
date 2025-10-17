@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+.hud {
+  position: fixed; left: 12px; right: 12px; top: 12px;
+  background: rgba(9, 12, 20, .7); color: #e7ecf3;
+  border: 1px solid #1b2a40; border-radius: 12px;
+  padding: 10px; backdrop-filter: blur(6px);
+  z-index: 10;
+}
+.hud .row { display: flex; gap: 8px; align-items: center; margin: 6px 0; flex-wrap: wrap; }
+.hud label { font-size: 13px; opacity: .9; }
+.hud input, .hud select { padding: 8px 10px; border-radius: 10px; border: 1px solid #1b2a40; min-width: 320px; background: #0c1220; color: #e7ecf3; }
+.hud button { padding: 8px 12px; border-radius: 10px; border: 1px solid #26395b; background: #0f1930; color: #e7ecf3; cursor: pointer; }
+.hud button:hover { background: #142241; }
+#status { font-size: 12px; opacity: .8; }
